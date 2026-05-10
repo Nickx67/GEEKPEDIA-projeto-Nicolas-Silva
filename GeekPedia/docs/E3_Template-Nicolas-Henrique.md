@@ -127,14 +127,11 @@ GeekPedia/
 
 ### Tela de Entrada
 
-![Tela de entrada](https://raw.githubusercontent.com/Nickx67/GEEKPEDIA-projeto-Nicolas-Silva/main/assets/mvp_entrada.png)
-
-*Descrição: Menu inicial exibindo as opções de recomendação direta e caminho inteligente.*
-
+![Tela de entrada](https://github.com/Nickx67/GEEKPEDIA-projeto-Nicolas-Silva/blob/main/GeekPedia/assets/mvp_entrada.png?raw=true)
 
 ### Tela de Resultado
 
-![Tela de resultado](https://raw.githubusercontent.com/Nickx67/GEEKPEDIA-projeto-Nicolas-Silva/main/assets/mvp_resultado.png)
+![Tela de resultado](https://github.com/Nickx67/GEEKPEDIA-projeto-Nicolas-Silva/blob/main/GeekPedia/assets/mvp_resultado.png?raw=true)
 
 *Descrição: Sistema exibindo a menor rota e o custo total entre a obra de origem e a recomendação indireta.*
 
