@@ -125,14 +125,14 @@ GeekPedia/
 
 ### Tela de Entrada
 
-![Tela de entrada](./assets/mvp_entrada.png)
+![Tela de entrada](../assets/mvp_entrada.png)
 
 *Descrição:Menu inicial exibindo as opções de recomendação direta e caminho inteligente.*
 
 
 ### Tela de Resultado
 
-![Tela de resultado](./assets/mvp_resultado.png)
+![Tela de resultado](../assets/mvp_resultado.png)
 
 *Descrição:Sistema exibindo a menor rota e o custo total entre a obra de origem e a recomendação indireta.*
 
@@ -178,11 +178,11 @@ tests\test_graph.py .                                                           
 
 | Hash (7 chars) | Mensagem | Autor |
 |----------------|----------|-------|
-| `abc1234` | feat: implementa classe Graph com lista de adjacência | |
-| `def5678` | feat: implementa algoritmo Dijkstra | |
-| `ghi9012` | test: adiciona testes unitários para Dijkstra | |
-| `jkl3456` | feat: leitura de grafo a partir de JSON | |
-| `mno7890` | feat: tela de resultado via CLI | |
+| main | feat: implementa classe Graph com lista de adjacência | |
+| main | feat: implementa algoritmo Dijkstra | |
+| main | test: adiciona testes unitários para Dijkstra | |
+| main | feat: leitura de grafo a partir de JSON | |
+| main | feat: tela de resultado via CLI | |
 
 ---
 
@@ -201,14 +201,14 @@ tests\test_graph.py .                                                           
 
 ## Checklist de Entrega
 
-- [] Repositório público e acessível
-- [] .gitignore configurado
-- [] README com instruções de execução do MVP
-- [] Algoritmo principal executando sem erros
-- [] Tela de entrada e tela de resultado demonstráveis
-- [] 3 testes unitários por algoritmo (mínimo caso base passando)
-- [] ≥ 5 commits com prefixos semânticos (feat:, fix:, test:, docs:)
-- [] Ao menos 1 arquivo de grafo de exemplo em `data/`
+- [x] Repositório público e acessível
+- [x] .gitignore configurado
+- [x] README com instruções de execução do MVP
+- [x] Algoritmo principal executando sem erros
+- [x] Tela de entrada e tela de resultado demonstráveis
+- [x] 3 testes unitários por algoritmo (mínimo caso base passando)
+- [x] ≥ 5 commits com prefixos semânticos (feat:, fix:, test:, docs:)
+- [x] Ao menos 1 arquivo de grafo de exemplo em `data/`
 
 ---
 
