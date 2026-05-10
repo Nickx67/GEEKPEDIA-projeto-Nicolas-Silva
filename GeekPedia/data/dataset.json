@@ -1,0 +1,107 @@
+{
+  "obras": [
+    {
+      "id": 1,
+      "titulo": "Naruto",
+      "midia": "Anime",
+      "genero": "Ação",
+      "temas": ["Ninjas", "Amizade"],
+      "publico_alvo": "Jovem",
+      "franquia": "Naruto"
+    },
+    {
+      "id": 2,
+      "titulo": "Naruto Storm",
+      "midia": "Jogo",
+      "genero": "Luta",
+      "temas": ["Combate", "Ninjas"],
+      "publico_alvo": "Jovem",
+      "franquia": "Naruto"
+    },
+    {
+      "id": 3,
+      "titulo": "Tekken",
+      "midia": "Jogo",
+      "genero": "Luta",
+      "temas": ["Artes Marciais"],
+      "publico_alvo": "Jovem",
+      "franquia": "Tekken"
+    },
+    {
+      "id": 4,
+      "titulo": "Dragon Ball Z",
+      "midia": "Anime",
+      "genero": "Luta",
+      "temas": ["Poder", "Artes Marciais"],
+      "publico_alvo": "Jovem",
+      "franquia": "Dragon Ball"
+    },
+    {
+      "id": 5,
+      "titulo": "Dragon Ball FighterZ",
+      "midia": "Jogo",
+      "genero": "Luta",
+      "temas": ["Combate", "Poder"],
+      "publico_alvo": "Jovem",
+      "franquia": "Dragon Ball"
+    },
+    {
+      "id": 6,
+      "titulo": "One Piece",
+      "midia": "Anime",
+      "genero": "Aventura",
+      "temas": ["Piratas", "Amizade"],
+      "publico_alvo": "Jovem",
+      "franquia": "One Piece"
+    },
+    {
+      "id": 7,
+      "titulo": "Pirate Warriors",
+      "midia": "Jogo",
+      "genero": "Ação",
+      "temas": ["Piratas", "Combate"],
+      "publico_alvo": "Jovem",
+      "franquia": "One Piece"
+    },
+    {
+      "id": 8,
+      "titulo": "Spider-Man",
+      "midia": "Filme",
+      "genero": "Herói",
+      "temas": ["Superação", "Heróis"],
+      "publico_alvo": "Jovem",
+      "franquia": "Marvel"
+    },
+    {
+      "id": 9,
+      "titulo": "Spider-Man PS4",
+      "midia": "Jogo",
+      "genero": "Ação",
+      "temas": ["Heróis", "Combate"],
+      "publico_alvo": "Jovem",
+      "franquia": "Marvel"
+    },
+    {
+      "id": 10,
+      "titulo": "Batman Arkham Knight",
+      "midia": "Jogo",
+      "genero": "Ação",
+      "temas": ["Heróis", "Investigação"],
+      "publico_alvo": "Jovem",
+      "franquia": "DC"
+    }
+  ],
+
+  "conexoes": [
+    { "origem": 1, "destino": 2, "peso": 2 },
+    { "origem": 2, "destino": 3, "peso": 6 },
+    { "origem": 3, "destino": 5, "peso": 5 },
+    { "origem": 4, "destino": 5, "peso": 2 },
+    { "origem": 4, "destino": 1, "peso": 5 },
+    { "origem": 6, "destino": 7, "peso": 2 },
+    { "origem": 6, "destino": 1, "peso": 6 },
+    { "origem": 8, "destino": 9, "peso": 2 },
+    { "origem": 9, "destino": 10, "peso": 4 },
+    { "origem": 7, "destino": 9, "peso": 7 }
+  ]
+}
