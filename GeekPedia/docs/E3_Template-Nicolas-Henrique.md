@@ -11,7 +11,7 @@
 | Campo | Preenchimento |
 |-------|---------------|
 | Nome do projeto | Geekpedia|
-| Repositório GitHub | |
+| Repositório GitHub | https://github.com/Nickx67/GEEKPEDIA-projeto-Nicolas-Silva.git|
 | Integrante 1 | Nicolas Silva Rodrigues de Melo — 38630192 |
 | Integrante 2 | Henrique de Figueiredo Lourenço — 37509021 |
 | Integrante 3 *(se houver)* | Nome — RA |
@@ -29,14 +29,11 @@
 # Ex.: Python 3.11+, Node 18+, Java 17+...
 ```
 
-**Instalação:**
+# Clone o repositório
+git clone https://github.com/Nickx67/GEEKPEDIA-projeto-Nicolas-Silva.git
+cd GEEKPEDIA-projeto-Nicolas-Silva
 
-```bash
-# Clone e instale dependências
-git clone https://github.com/seu-usuario/seu-repo.git
-cd seu-repo
-# pip install -r requirements.txt  (ou npm install, etc.)
-```
+# O projeto utiliza apenas bibliotecas nativas, então não há dependências externas (como um requirements.txt) para instalar.
 
 **Execução:**
 
@@ -128,15 +125,16 @@ GeekPedia/
 
 ### Tela de Entrada
 
-![Tela de entrada](./assets/mvp_entrada.png)
+![Tela de entrada]([./assets/mvp_entrada.png](https://raw.githubusercontent.com/Nickx67/GEEKPEDIA-projeto-Nicolas-Silva/main/assets/mvp_entrada.png))
 
-*Descrição:*
+*Descrição:Menu inicial exibindo as opções de recomendação direta e caminho inteligente.*
+
 
 ### Tela de Resultado
 
-![Tela de resultado](./assets/mvp_resultado.png)
+![Tela de resultado]([./assets/mvp_resultado.png](https://raw.githubusercontent.com/Nickx67/GEEKPEDIA-projeto-Nicolas-Silva/main/assets/mvp_resultado.png))
 
-*Descrição:*
+*Descrição:Sistema exibindo a menor rota e o custo total entre a obra de origem e a recomendação indireta.*
 
 ---
 
@@ -144,20 +142,32 @@ GeekPedia/
 
 | Algoritmo | Caso de teste | Status | Comando para executar |
 |-----------|--------------|--------|----------------------|
-| | Caso base | ✅ / ❌ | `pytest tests/test_algoritmo.py::test_caso_base` |
-| | Grafo vazio | ✅ / ❌ | |
-| | Grafo completo | ✅ / ❌ | |
+| Dijkstra | Caminho de menor custo (Naruto -> Tekken retornando peso 10) | ✅ | `pytest tests/test_algorithms.py::test_dijkstra` |
+| BFS | Exploração de vizinhança na mesma franquia (Naruto -> Naruto Storm) | ✅ | `pytest tests/test_algorithms.py::test_bfs` |
+| Graph (Estrutura) | Adição de nó em um grafo vazio | ✅ | `pytest tests/test_graph.py::test_add_node` |
 
 **Como rodar todos os testes:**
 
 ```bash
 pytest tests/
-```
 
 **Resultado atual:**
 
 ```
 # Cole aqui a saída do pytest / JUnit
+
+==================================================================== test session starts 
+=====================================================================
+platform win32 -- Python 3.13.13, pytest-9.0.3, pluggy-1.6.0
+rootdir: C:\Users\Nick\Downloads\GeekPedia
+collected 3 items                                                                                                                                             
+
+tests\test_algorithms.py ..                                                                                                                             [ 66%]
+tests\test_graph.py .                                                                                                                                   [100%]
+
+===================================================================== 3 passed in 0.10s ======================================================================
+
+
 ```
 
 ---
@@ -168,11 +178,11 @@ pytest tests/
 
 | Hash (7 chars) | Mensagem | Autor |
 |----------------|----------|-------|
-| `abc1234` | feat: implementa classe Graph com lista de adjacência | |
-| `def5678` | feat: implementa algoritmo Dijkstra | |
-| `ghi9012` | test: adiciona testes unitários para Dijkstra | |
-| `jkl3456` | feat: leitura de grafo a partir de JSON | |
-| `mno7890` | feat: tela de resultado via CLI | |
+| `main` | feat: implementa classes Graph e Node com lista de adjacência |Nicolas Melo |
+| `main` | feat: adiciona algoritmos BFS e Dijkstra | Henrique Lourenço|
+| `main` | feat: cria parser file_reader para carregar JSON |Henrique Lourenço |
+| `main` |docs: atualiza README com instrucoes de execucao | Nicolas Melo|
+| `main` | fix: atualiza a versao final do relatorio E3 e corrige caminhos de imagem |Nicolas Melo |
 
 ---
 
@@ -180,25 +190,25 @@ pytest tests/
 
 | Funcionalidade | Status | Observação |
 |---------------|--------|------------|
-| Classe do grafo | ✅ Completo | |
-| Algoritmo principal | ✅ Completo / 🔄 Parcial | |
-| Leitura de arquivo | ✅ Completo / 🔄 Parcial | |
-| Tela de entrada | ✅ Completo / 🔄 Parcial | |
-| Tela de resultado | ✅ Completo / 🔄 Parcial | |
-| Testes unitários | ✅ Completo / 🔄 Parcial | |
+| Classe do grafo | ✅ Completo | A estrutura baseada em lista de adjacência (`defaultdict`) está implementada e otimizada em `graph.py`. |
+| Algoritmo principal | ✅ Completo | O algoritmo de Dijkstra está funcionando perfeitamente com fila de prioridade, calculando o menor custo acumulado e reconstruindo o caminho. O algoritmo secundário (BFS) também está operacional. |
+| Leitura de arquivo | ✅ Completo | O parser em `file_reader.py` está conseguindo instanciar os nós (`Node`) e registrar as arestas com pesos diretamente do `dataset.json`. |
+| Tela de entrada | ✅ Completo | A interface via terminal (CLI) construída no `menu.py` permite a navegação e escolha da obra inicial. |
+| Tela de resultado | ✅ Completo | O `RecommendationService` consegue processar o grafo e exibir as recomendações filtradas e ordenadas por peso (Top K) no console. |
+| Testes unitários | ✅ Completo | Os testes de adição de nó, busca em largura (BFS) e caminho mínimo (Dijkstra) estão passando sem erros no `pytest`. |
 
 ---
 
 ## Checklist de Entrega
 
-- [ ] Repositório público e acessível
-- [ ] .gitignore configurado
-- [ ] README com instruções de execução do MVP
-- [ ] Algoritmo principal executando sem erros
-- [ ] Tela de entrada e tela de resultado demonstráveis
-- [ ] 3 testes unitários por algoritmo (mínimo caso base passando)
-- [ ] ≥ 5 commits com prefixos semânticos (feat:, fix:, test:, docs:)
-- [ ] Ao menos 1 arquivo de grafo de exemplo em `data/`
+- [x] Repositório público e acessível
+- [x] .gitignore configurado
+- [x] README com instruções de execução do MVP
+- [x] Algoritmo principal executando sem erros
+- [x] Tela de entrada e tela de resultado demonstráveis
+- [x] 3 testes unitários por algoritmo (mínimo caso base passando)
+- [x] ≥ 5 commits com prefixos semânticos (feat:, fix:, test:, docs:)
+- [x] Ao menos 1 arquivo de grafo de exemplo em `data/`
 
 ---
 
