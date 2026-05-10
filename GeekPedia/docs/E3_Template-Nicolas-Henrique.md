@@ -119,22 +119,24 @@ GeekPedia/
 
 ---
 
+---
+
 ## 4. Telas do MVP
 
 > Insira screenshots ou gravações da interface funcionando.
 
 ### Tela de Entrada
 
-![Tela de entrada]([./assets/mvp_entrada.png](https://raw.githubusercontent.com/Nickx67/GEEKPEDIA-projeto-Nicolas-Silva/main/assets/mvp_entrada.png))
+![Tela de entrada](https://raw.githubusercontent.com/Nickx67/GEEKPEDIA-projeto-Nicolas-Silva/main/assets/mvp_entrada.png)
 
-*Descrição:Menu inicial exibindo as opções de recomendação direta e caminho inteligente.*
+*Descrição: Menu inicial exibindo as opções de recomendação direta e caminho inteligente.*
 
 
 ### Tela de Resultado
 
-![Tela de resultado]([./assets/mvp_resultado.png](https://raw.githubusercontent.com/Nickx67/GEEKPEDIA-projeto-Nicolas-Silva/main/assets/mvp_resultado.png))
+![Tela de resultado](https://raw.githubusercontent.com/Nickx67/GEEKPEDIA-projeto-Nicolas-Silva/main/assets/mvp_resultado.png)
 
-*Descrição:Sistema exibindo a menor rota e o custo total entre a obra de origem e a recomendação indireta.*
+*Descrição: Sistema exibindo a menor rota e o custo total entre a obra de origem e a recomendação indireta.*
 
 ---
 
