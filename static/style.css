@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0f172a;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 60px;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 30px; 
+    color: blue;
+}
+
+input {
+    width: 300px;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    margin-bottom: 30px;
+}
+button {
+    padding: 12px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2563eb;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+#results {
+    margin-top: 30px;
+    background-color: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 150px;
+}
+#graph {
+
+    position: relative;
+
+    width: 900px;
+    height: 600px;
+
+    margin-top: 40px;
+
+    border: 2px solid #333;
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+.node {
+
+    position: absolute;
+
+    width: 120px;
+    height: 120px;
+
+    border-radius: 50%;
+
+    background-color: #4a90e2;
+
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    font-weight: bold;
+
+    padding: 10px;
+
+    box-sizing: border-box;
+}
+
+.center-node {
+
+    background-color: #e74c3c;
+}
+
+.line {
+
+    position: absolute;
+
+    height: 4px;
+
+    background-color: white;
+
+    transform-origin: left center;
+}
