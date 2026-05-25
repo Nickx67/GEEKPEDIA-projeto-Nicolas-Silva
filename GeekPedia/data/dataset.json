@@ -89,19 +89,64 @@
       "temas": ["Heróis", "Investigação"],
       "publico_alvo": "Jovem",
       "franquia": "DC"
-    }
-  ],
-
-  "conexoes": [
-    { "origem": 1, "destino": 2, "peso": 2 },
-    { "origem": 2, "destino": 3, "peso": 6 },
-    { "origem": 3, "destino": 5, "peso": 5 },
-    { "origem": 4, "destino": 5, "peso": 2 },
-    { "origem": 4, "destino": 1, "peso": 5 },
-    { "origem": 6, "destino": 7, "peso": 2 },
-    { "origem": 6, "destino": 1, "peso": 6 },
-    { "origem": 8, "destino": 9, "peso": 2 },
-    { "origem": 9, "destino": 10, "peso": 4 },
-    { "origem": 7, "destino": 9, "peso": 7 }
-  ]
+    },
+    {
+  "id": 11,
+  "titulo": "Stranger Things",
+  "midia": "Serie",
+  "genero": "Ficcao",
+  "temas": ["Mistério", "Sobrenatural"],
+  "publico_alvo": "Jovem",
+  "franquia": "Stranger Things"
+},
+{
+  "id": 12,
+  "titulo": "Stranger Things 3: The Game",
+  "midia": "Jogo",
+  "genero": "Aventura",
+  "temas": ["Mistério", "Sobrenatural"],
+  "publico_alvo": "Jovem",
+  "franquia": "Stranger Things"
+},
+{
+  "id": 13,
+  "titulo": "The Witcher",
+  "midia": "Serie",
+  "genero": "Fantasia",
+  "temas": ["Monstros", "Aventura"],
+  "publico_alvo": "Adulto",
+  "franquia": "The Witcher"
+},
+{
+  "id": 14,
+  "titulo": "The Witcher 3",
+  "midia": "Jogo",
+  "genero": "RPG",
+  "temas": ["Monstros", "Aventura"],
+  "publico_alvo": "Adulto",
+  "franquia": "The Witcher"
+},
+{
+  "id": 15,
+  "titulo": "Breaking Bad",
+  "midia": "Serie",
+  "genero": "Drama",
+  "temas": ["Crime", "Superação"],
+  "publico_alvo": "Adulto",
+  "franquia": "Breaking Bad"
+},
+{
+  "id": 16,
+  "titulo": "Better Call Saul",
+  "midia": "Serie",
+  "genero": "Drama",
+  "temas": ["Crime", "Advocacia"],
+  "publico_alvo": "Adulto",
+  "franquia": "Breaking Bad"
 }
+  ]
+
+
+  
+}
+

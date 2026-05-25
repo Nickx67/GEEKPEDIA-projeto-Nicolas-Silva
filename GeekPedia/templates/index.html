@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>GeekPedia</title>
+
+    <link
+        rel="stylesheet"
+        href="/static/style.css"
+    >
+
+</head>
+
+<body>
+
+    <div id="stars"></div>
+
+    <div class="container">
+
+        <h1>
+    ✦ GEEKPEDIA ✦
+        </h1>
+        <p class="subtitle">
+    Explore conexões entre universos geek
+</p>
+
+        <input
+            type="text"
+            id="titleInput"
+            placeholder="Digite uma obra"
+        >
+
+        <br><br>
+
+        <button onclick="runBFS()">
+            Recomendações do mesmo universo
+        </button>
+
+        <button onclick="runDijkstra()">
+            Recomendações Semelhantes
+        </button>
+
+        <br><br>
+
+        <div id="graph"></div>
+
+    </div>
+
+    <script src="/static/script.js"></script>
+
+</body>
+
+</html>
+
